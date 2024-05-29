@@ -61,17 +61,22 @@ body {
       }
       .cardText {
         display: flex;
-        align-items: end;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
         border-radius: 0 0 1rem 1rem;
         color: white;
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 30%;
+        min-height: 30%;
         text-align: center;
         background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0));
-        h3 {
+        padding: 0.5rem;
+        box-sizing: border-box;
+        h3,
+        p {
+          box-sizing: border-box;
           margin: 0;
         }
       }
