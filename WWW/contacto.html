@@ -22,25 +22,55 @@
           </div>
         </div>
       </div>
-      <div class="section">
-        <h2>CONTACTO</h2>
-        <h3>DIRECCIÓN</h3>
-        <p>
-          Periférico de la Juventud 5700 <br>
-          Distrito Uno 31110<br>
-          Chihuahua, Chih.
-        </p>
-        <h3>CORREO ELECTRÓNICO</h3>
-        <p>automaxcompany@automax.com</p>
-        <h3>TELÉFONO</h3>
-        <p>614-112-2234</p>
-        <h3>INTEGRANTES</h3>
-        <p>
-          Johann David Gómez Villalobos <br>
-          Emiliano Loya Flores <br>
-          Moises Aaron Bustillos Sandoval
-        </p>
-        
+      <div class="content">
+        <div class="section">
+          <h2>CONTACTO</h2>
+          <h3>DIRECCIÓN</h3>
+          <p>
+            Periférico de la Juventud 5700 <br>
+            Distrito Uno 31110<br>
+            Chihuahua, Chih.
+          </p>
+          <h3>CORREO ELECTRÓNICO</h3>
+          <p>automaxcompany@automax.com</p>
+          <h3>TELÉFONO</h3>
+          <p>614-112-2234</p>
+          <h3>INTEGRANTES</h3>
+          <p>
+            Johann David Gómez Villalobos <br>
+            Emiliano Loya Flores <br>
+            Moises Aaron Bustillos Sandoval
+          </p>
+        </div>
+        <!-- Formulario de Contacto -->
+        <div class="form-container">
+          <h3 id="Formulario">Formulario de Contacto</h3>
+          <form id="formulario" action="/registro" method="post">
+            <div class="form-element">
+              <label for="nombre">Nombre:</label>
+              <input id="nombre" name="nombre" type="text" required>
+            </div>
+            <div class="form-element">
+              <label for="telefono">Teléfono:</label>
+              <input id="telefono" name="telefono" type="text" required>
+            </div>
+            <div class="form-element">
+              <label for="correo">Correo:</label>
+              <input id="correo" name="correo" type="email" required>
+            </div>
+            <div class="form-element">
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <input id="button" type="submit" value="Enviar">
+            <button type="button" onclick="limpiarFormulario()">Limpiar</button>
+          </form>
+        </div>
+        <script>
+          function limpiarFormulario() {
+              document.getElementById("formulario").reset();
+          }
+        </script>
       </div>
     </div>
   </body>

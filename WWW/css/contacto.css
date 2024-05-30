@@ -37,8 +37,15 @@ body {
   }
 }
 
-.section {
+.content {
+  display: flex;
+  justify-content: space-between;
   margin: 20px;
+}
+
+.section {
+  flex: 1;
+  margin-right: 20px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -54,5 +61,57 @@ body {
   p {
     text-align: center;
     color: blue;
-  } 
+  }
+}
+
+.form-container {
+  flex: 1;
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-element {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"],
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #0056b3;
+}
+
+button[type="button"] {
+  background-color: #dc3545;
+}
+
+button[type="button"]:hover {
+  background-color: #c82333;
 }
