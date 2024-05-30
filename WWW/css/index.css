@@ -24,6 +24,9 @@ body {
     box-sizing: border-box;
     padding-left: 3rem;
     padding-right: 3rem;
+    a {
+      text-decoration: none;
+    }
     h1 {
       margin: 0;
       color: #ffff;
