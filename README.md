@@ -21,7 +21,7 @@ El archivo `index.html` define la estructura de la página principal del catálo
 
 #### Secciones Principales:
 
-- **Header**: Contiene el título del sitio y botones de navegación para "Contactanos" y "Acerca de Nosotros".
+- **Header**: Contiene el título del sitio y botones de navegación para "Contacto" y "Acerca de".
 - **Marcas**: Sección principal que muestra tarjetas de diferentes marcas de coches.
 - **Secciones de Marca**: Cada marca tiene una sección dedicada que muestra tarjetas de sus modelos de coches con enlaces a páginas de detalles.
 
@@ -36,31 +36,27 @@ El archivo `index.html` define la estructura de la página principal del catálo
 
 ## Acceder a la Aplicación
 
-Abra su navegador web y vaya a http://localhost:3000 para ver la aplicación en funcionamiento.
+Abra su navegador web y vaya a http://localhost:8888 para ver la aplicación en funcionamiento.
 Estructura de Archivos
 
 -   server.js: Archivo del servidor Node.js.
 -   index.html: Archivo HTML principal.
+-    contacto.html: Archivo que contiene la página de contacto.
+-    acercaDe.html: Archivo que contiene información de la empresa como misión, visión y valores.
 -    css/: Directorio que contiene los archivos CSS para estilos.
 -    img/: Directorio que contiene las imágenes usadas en el catálogo.
 -    cars/: Directorio que contiene páginas HTML para detalles de modelos de coches.
 
 ## Contribuciones
 
-Las contribuciones son bienvenidas. Por favor, siga las siguientes pautas:
+Las contribuciones son bienvenidas. Por favor, siga las siguientes instrucciones:
 
--    Fork el Repositorio.
--    Cree una Rama (git checkout -b feature-nueva-caracteristica).
+-    Clona el Repositorio.
 -    Realice sus Cambios (git commit -m 'Agregar nueva característica').
--    Empuje la Rama (git push origin feature-nueva-caracteristica).
+-    Empuje la Rama (git push origin main).
 -    Cree un Pull Request.
-
-## Licencia
-
-Este proyecto está licenciado bajo la Licencia MIT. Vea el archivo LICENSE para más detalles.
-Contacto
 
 ## Para preguntas o sugerencias, por favor contacte a:
 
--    Correo Electrónico: contacto@automax.com
--    Teléfono: +123-456-7890
+-    Correo Electrónico: automaxcompany@automax.com
+-    Teléfono: 614-112-2234
