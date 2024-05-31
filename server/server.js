@@ -4,7 +4,7 @@ const path = require("path");
 
 http
   .createServer((req, res) => {
-    const file = req.url == "/" ? "../WWW/index.html" : `../WWW/${req.url}`;
+    const file = req.url == "/" ? "WWW/index.html" : `WWW/${req.url}`;
 
     if (req.method === "POST" && req.url === "/registro") {
       let data = [];
@@ -30,11 +30,18 @@ http
               users = JSON.parse(content); // Convertir cadena JSON a objeto
             }
             users.push(userData); // Añadir los nuevos datos al objeto
-            fs.writeFile("users.json", JSON.stringify(users, null, 2), (err) => { // Convertir objeto a cadena JSON
-              if (err) throw err;
-              res.writeHead(200, { "Content-Type": "application/json" });
-              res.end(JSON.stringify({ message: "Registro exitoso", userData }));
-            });
+            fs.writeFile(
+              "users.json",
+              JSON.stringify(users, null, 2),
+              (err) => {
+                // Convertir objeto a cadena JSON
+                if (err) throw err;
+                res.writeHead(200, { "Content-Type": "application/json" });
+                res.end(
+                  JSON.stringify({ message: "Registro exitoso", userData })
+                );
+              }
+            );
           });
         });
     } else {
@@ -65,4 +72,5 @@ http
         }
       });
     }
-  }).listen(8888);
+  })
+  .listen(8888);
