@@ -41,11 +41,11 @@ Estructura de Archivos
 
 -   server.js: Archivo del servidor Node.js.
 -   index.html: Archivo HTML principal.
--    contacto.html: Archivo que contiene la página de contacto.
--    acercaDe.html: Archivo que contiene información de la empresa como misión, visión y valores.
--    css/: Directorio que contiene los archivos CSS para estilos.
--    img/: Directorio que contiene las imágenes usadas en el catálogo.
--    cars/: Directorio que contiene páginas HTML para detalles de modelos de coches.
+-   contacto.html: Archivo que contiene la página de contacto.
+-   acercaDe.html: Archivo que contiene información de la empresa como misión, visión y valores.
+-   css/: Directorio que contiene los archivos CSS para estilos.
+-   img/: Directorio que contiene las imágenes usadas en el catálogo.
+-   cars/: Directorio que contiene páginas HTML para detalles de modelos de coches.
 
 ## Contribuciones
 
@@ -55,6 +55,15 @@ Las contribuciones son bienvenidas. Por favor, siga las siguientes instrucciones
 -    Realice sus Cambios (git commit -m 'Agregar nueva característica').
 -    Empuje la Rama (git push origin main).
 -    Cree un Pull Request.
+
+# Liga de la imagen en Dockerhub
+https://hub.docker.com/r/emi154loya/docker-image_dbp_proyecto_parcial_2/tags
+
+# Instrucciones para Dockerhub
+En la terminal poner los siguientes comandos: 
+- docker pull emi154loya/docker-image_dbp_proyecto_parcial_2:latest
+- docker run -p 8888:8888 emi154loya/docker-image_dbp_proyecto_parcial_2
+Después ir al localhost:8888 y la página ya estará funcionando
 
 ## Para preguntas o sugerencias, por favor contacte a:
 
