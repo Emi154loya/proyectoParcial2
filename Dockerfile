@@ -14,3 +14,5 @@ EXPOSE 8888
 
 # Define el entrypoint y el comando por defecto para ejecutar tu servidor
 ENTRYPOINT ["node", "/app/server/server.js"]
+
+
