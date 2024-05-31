@@ -60,3 +60,9 @@ Las contribuciones son bienvenidas. Por favor, siga las siguientes instrucciones
 
 -    Correo Electrónico: automaxcompany@automax.com
 -    Teléfono: 614-112-2234
+
+# Integrantes del Equipo
+
+- Johann David Gomez Villalobos - 352909
+- Moises Aaron Bustillos Sandoval - 361352
+- Emiliano Loya Flores - 357611
